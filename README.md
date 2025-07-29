@@ -29,6 +29,6 @@ Este projeto foi criado como parte de um **trabalho acadêmico** na disciplina d
   * Outros tipos de problemas
 * **Opção de Envio Anônimo:** O usuário pode decidir se quer se identificar ou não.
 * **Confirmação de Envio:** Após preencher o formulário, o sistema confirma que a denúncia foi registrada com sucesso.
-* **Design Responsivo (opcional):** O layout pode ser adaptado para funcionar bem em celulares, tablets e computadores.
+* **Design Responsivo (opcional):** O layout pode ser adaptado para funcionar bem em celulares, tablets e computadores
 
 ---
