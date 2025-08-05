@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CDE</title>
+
+
+</head>
+
+<body>
+<div class="principal">
+    <header>
+        <a href="#" class="titulo">Centro de Denúncia Estudantil</a>
+        <img src="img/CDE.png" class="logo" alt="Logo CDE" />
+    </header>
+
+    <div class="centralizador">
+        <div class="detalhes">
+            <p><strong>Colabore com a Escola</strong></p>
+            <p><strong>Orientações Importantes:</strong></p>
+            <p><strong>ATENÇÃO:</strong> Se você estiver em uma situação de perigo ou sofrer algum tipo de violência, ligue imediatamente para o número 190 e peça ajuda! Caso não esteja mais em risco e deseje registrar um Boletim de Ocorrência (BO), você pode acessar a <strong><a href="">Delegacia Interativa</a></strong> ou procurar a delegacia mais próxima.</p>
+            <p>Este espaço foi criado <strong>exclusivamente</strong> para o envio de denúncias relacionadas ao ambiente escolar. Se você presenciou ou tem informações sobre situações de violência, bullying, assédio ou outras ocorrências, este é o local adequado para registrar os fatos de forma segura e, se desejar, anônima.</p>
+            <p>Quanto mais informações forem fornecidas, mais rápido será possível compreender e resolver a situação, contribuindo para um ambiente escolar mais seguro para todos.</p>
+            <p>Procure incluir o máximo de dados possíveis, como nomes, apelidos, características físicas, redes sociais (Facebook, Instagram, TikTok etc.), veículos envolvidos (com placas ou descrição), endereços ou pontos de referência, entre outros detalhes relevantes.</p>
+            <p>Os campos marcados com * são obrigatórios.</p>
+            <p>O anonimato é garantido. No entanto, caso você queira se identificar para fornecer mais detalhes ou acompanhar a denúncia, é possível informar um telefone ou e-mail no campo de mensagem.</p>
+        </div>
+    </div>
+
+    <form method="POST" action="salvar.php">
+        <div class="centralizador">
+            <div class="entrada-area">
+                <div class="bloco-entrada">
+                    <p class="titulos">Categoria de denúncia *</p>
+                    <select id="categoria" name="categoria" class="entrada" required>
+                        <option value="" hidden>Selecione...</option>
+                        <option value="violencia">Violência</option>
+                        <option value="bullying">Bullying</option>
+                        <option value="outro">Outro</option>
+                        <option value="assedio">Assédio</option>
+                    </select>
+                </div>
+
+                <div class="bloco-entrada">
+                    <p class="titulos">Tipo de envolvido</p>
+                    <select id="envolvido" name="envolvido" class="entrada" required>
+                        <option value="" hidden>Selecione...</option>
+                        <option value="aluno">Aluno</option>
+                        <option value="professor">Professor</option>
+                        <option value="funcionario">Funcionário</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="centralizador">
+            <div class="entrada-area">
+                <div class="bloco-entrada">
+                    <p class="titulos">Local da ocorrência</p>
+                    <input type="text" id="local" name="local" placeholder="Ex: Sala 3, Pátio, Banheiro" class="entrada2" required />
+                </div>
+
+                <div class="bloco-entrada">
+                    <p class="titulos">Urgência *</p>
+                    <select id="urgencia" name="urgencia" class="entrada" required>
+                        <option value="" hidden>Selecione...</option>
+                        <option value="alta">Alta</option>
+                        <option value="media">Média</option>
+                        <option value="baixa">Baixa</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="centralizador">
+            <div class="entrada-area">
+                <div class="bloco-entrada">
+                    <p class="titulos">Data</p>
+                    <input type="date" id="data" name="data" class="entrada" required />
+                </div>
+            </div>
+        </div>
+
+        <div class="centralizador">
+            <div class="bloco-entrada-textao">
+                <p class="titulo">Informe o texto da denúncia *</p>
+                <div class="entrada-area-textao">
+                    <textarea id="denuncia" name="denuncia" rows="5" cols="40" placeholder="Digite sua denúncia aqui..." class="textao" required></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="centralizador">
+            <div class="area-bnt">
+                <button type="reset" class="bnt">Cancelar</button>
+                <button type="submit" class="bnt2">Enviar</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
