@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Denúncias</title>
+    <style>
+        body {
+            font-family: "Montserrat", system-ui;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+        }
+        .denuncias {
+            width: 1250px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px #00000033;
+        }
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        thead {
+            background-color: #559346;
+            color: white;
+        }
+        th, td {
+            padding: 10px 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #f0f0f0;
+        }
+        .urgencia-alta {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .urgencia-media {
+            color: #fbc02d;
+            font-weight: bold;
+        }
+        .urgencia-baixa {
+            color: #388e3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="denuncias">
+        <h2>Lista de Denúncias</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria de denúncia</th>
+                    <th>Tipo de envolvido</th>
+                    <th>Local da ocorrência</th>
+                    <th>Urgência</th>
+                    <th>Data</th>
+                    <th>Texto da denúncia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Violência</td>
+                    <td>Aluno</td>
+                    <td>Rua das Flores, 123</td>
+                    <td class="urgencia-alta">Alta</td>
+                    <td>28/07/2026</td>
+                    <td>Fulano me bateu na saída da escola, não sei o que fazer.</td>
+                </tr>
+                <tr>
+                    <td>Bullying</td>
+                    <td>Aluno</td>
+                    <td>Rua João Pessoa, 456</td>
+                    <td class="urgencia-media">Média</td>
+                    <td>28/07/2026</td>
+                    <td>Beltrano vive zombando do meu jeito de falar e me humilha.</td>
+                </tr>
+                <tr>
+                    <td>Assédio</td>
+                    <td>Professor</td>
+                    <td>Rua da Paz, 789</td>
+                    <td class="urgencia-alta">Alta</td>
+                    <td>28/07/2026</td>
+                    <td>O professor José ficou me mandando mensagem que me deixou desconfortável.</td>
+                </tr>
+                <tr>
+                    <td>Outros</td>
+                    <td>Funcionário</td>
+                    <td>Rua do Sol, 321</td>
+                    <td class="urgencia-baixa">Baixa</td>
+                    <td>28/07/2026</td>
+                    <td>O funcionário Carlos sempre chega atrasado e atrasa a limpeza da escola.</td>
+                </tr>
+                <tr>
+                    <td>Violência</td>
+                    <td>Aluno</td>
+                    <td>Rua 7 de Setembro, 777</td>
+                    <td class="urgencia-alta">Alta</td>
+                    <td>28/07/2026</td>
+                    <td>Maria me empurrou no corredor e caiu no chão.</td>
+                </tr>
+                <tr>
+                    <td>Bullying</td>
+                    <td>Aluno</td>
+                    <td>Rua do Comércio, 555</td>
+                    <td class="urgencia-media">Média</td>
+                    <td>28/07/2026</td>
+                    <td>João fica espalhando rumores falsos sobre mim.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

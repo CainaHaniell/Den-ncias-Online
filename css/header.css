@@ -29,7 +29,7 @@
 
 
 header {
-    background-color: rgb(40, 118, 2);
+background-color: black;
     width: 100%;
     margin-left: 0;
     padding: 10px;
@@ -42,17 +42,19 @@ header {
 }
 
 .menu {
-  
+    margin-right: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .menu nav a {
-
     text-decoration: none;
     padding-right: 30px;
-    font-size: .875rem;
+        font-size: .975rem;
+    font-weight: bold;
+        margin: 20px;
 }
 
 
@@ -79,103 +81,3 @@ header {
     width: calc(100% - 40px);
 }
 
-
-.Create-account {
-    display: flex;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: .875rem;
-    font-weight: bold;
-    transition: transform .3s ease-in;
-
-}
-
-.Create-account:hover {
-    transform: scale(1.1);
-    
-}
-
-.login {
-    display: flex;
-    color: rgb(255, 255, 255);
-    margin-right: 20px;
-    font-size: .875rem;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    transition: transform .3s ease-in;
-
-}
-
-.login:hover {
-    transform: scale(1.1);
-    color: white;
-}
-
-.menu-cadastrar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 50px;
-}
-
-.cadastrar {
-    display: flex;
-    gap: 35px;
-    align-items: center;
-}
-
-.Create-account:hover {
-    color: white;
-}
-
- 
-
-.Create-account {
-    color: white;
-    position: relative;
-    transition: color 0.3s;
-}
-
-/* Faz o Tracinho na classe Nav */
-.Create-account::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: rgba(193, 193, 193, 0.71);
-    transition: width 0.3s ease;
-}
-
-/* Define a largura do elemento */
-.Create-account:hover::after {
-    width: calc(100% - 10px);
-}
-/* ------------------------------------- */
-/* Barra nav*/
-.login:hover::after {
-    width: calc(100% - 20px);
-}
-
-/* Faz o Tracinho na classe Nav */
-.login::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: rgba(193, 193, 193, 0.71);
-    transition: width 0.3s ease;
-}
-
-/* Define a largura do elemento */
-.login:hover::after {
-    width: calc(100% - 10px);
-}

@@ -3,10 +3,10 @@
 :root {
   --first-color: #559346;
   --first-color-alt: #6cab5c;
-  --title-color: hsl(220, 68%, 4%);
+  --title-color: hsl(0, 0%, 100%);
   --white-color: hsl(0, 0%, 100%);
   --text-color: hsl(220, 15%, 66%);
-  --body-color: hsl(0, 0%, 100%);
+  --body-color: #0d0d0d;
   --container-color: hsl(220, 50%, 97%);
   --body-font: "Montserrat", system-ui;
   --big-font-size: 1.5rem;
@@ -80,8 +80,10 @@ img {
   overflow: hidden;
 }
 
-.login__blob {
+.img-logo {
   display: none;
+ 
+
 }
 
 .login-titulo {
@@ -137,14 +139,14 @@ img {
 }
 
 .login__forgot:hover {
-  color: var(--first-color);
+  color: #212121;
 }
 
 .login-button {
   width: 100%;
   display: inline-flex;
   justify-content: center;
-  background-color: var(--first-color);
+  background-color: #212121;
   color: var(--white-color);
   font-weight: var(--font-semi-bold);
   padding-block: 1.5rem;
@@ -155,8 +157,8 @@ img {
 }
 
 .login-button:hover {
-  background-color: var(--first-color-alt);
-  box-shadow: 0 8px 24px hsla(208, 92%, 32%, 0.3);
+  background-color: #2c2b2b;
+  box-shadow: 0 8px 24px hsla(207, 38%, 90%, 0.3);
 }
 
 .social {
@@ -205,7 +207,7 @@ img {
 .atalho-cadastro a,
 .atalho-login a {
   background: none;
-  color: var(--first-color);
+  color: rgb(255, 255, 255);
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
   cursor: pointer;
@@ -287,12 +289,14 @@ img {
   .login__group {
     grid-template-columns: repeat(2, 1fr);
   }
-  .login__blob {
+  .img-logo{
     display: block;
     height: 100vh;
+    width: 65%;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 0px;
+  
   }
   .login__img {
     transform: translate(0rem, 0rem);
